@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrows", "Arrows\Arrows.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotDetector", "DotDetector\DotDetector.csproj", "{44EF2352-DD72-4A72-96A8-E239DE72E892}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiplicationTable", "MultiplicationTable\MultiplicationTable.csproj", "{8AF6C564-CE40-4B22-91B6-05C6CF3F9E4E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{44EF2352-DD72-4A72-96A8-E239DE72E892}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44EF2352-DD72-4A72-96A8-E239DE72E892}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44EF2352-DD72-4A72-96A8-E239DE72E892}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AF6C564-CE40-4B22-91B6-05C6CF3F9E4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AF6C564-CE40-4B22-91B6-05C6CF3F9E4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AF6C564-CE40-4B22-91B6-05C6CF3F9E4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AF6C564-CE40-4B22-91B6-05C6CF3F9E4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
