@@ -13,18 +13,9 @@
             this.radius = radius;
         }
 
-        public Circle((double, double) point, double radius): this(point.Item1, point.Item2, radius)
-        {            
-        }
-
         public bool IsPointBelong(double x, double y)
         {
             return Math.Pow(this.x - x, 2) + Math.Pow(this.y - y, 2) <= Math.Pow(radius, 2);
-        }
-
-        public bool IsPointBelong((double, double) point)
-        {
-            return IsPointBelong(point.Item1, point.Item2);
         }
     }
 }
