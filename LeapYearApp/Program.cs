@@ -4,6 +4,7 @@ void CheckYear()
 {
     while (true)
     {
+        Console.Clear();
         Console.WriteLine("Введите год в формате YYYY: ");
         int year;
         if (!int.TryParse(Console.ReadLine(), out year))

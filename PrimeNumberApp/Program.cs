@@ -4,6 +4,7 @@ void CheckNumber()
 {
     while (true)
     {
+        Console.Clear();
         Console.WriteLine("Введите число для проверки: ");
         int number;
         if (!int.TryParse(Console.ReadLine(), out number))
