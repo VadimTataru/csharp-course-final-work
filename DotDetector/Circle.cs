@@ -1,6 +1,6 @@
 ﻿namespace DotDetector
 {
-    internal class Circle
+    public class Circle
     {
         double x;
         double y;
