@@ -22,7 +22,11 @@ void CheckNumber()
     
 }
 
-
+/// <summary>
+/// Метод, определяющий, является ли число простым
+/// </summary>
+/// <params name="number">Входное число</params>
+/// <returns>Является ли число простым?</returns>
 bool IsNumberPrime(int number)
 {
     if (number <= 1) return false;

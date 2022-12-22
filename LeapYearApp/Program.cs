@@ -22,7 +22,10 @@ void CheckYear()
 
 }
 
-
+/// <summary>
+/// Метод определяет, является ли год високосным.
+/// <returns>Год високосный? - true, иначе - false</returns>
+/// </summary>
 bool IsLeap(int year)
 {
     if(year % 4 == 0)

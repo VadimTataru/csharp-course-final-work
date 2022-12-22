@@ -10,6 +10,9 @@ foreach(string line in text)
     Console.WriteLine(line);
 
 
+/// <summary>
+/// Метод ассинхронного чтения данных из файла по пути filepath
+/// </summary>
 async Task<List<string>> ReadFileAsync(string filepath)
 {
     if (!File.Exists(filepath))
@@ -28,6 +31,9 @@ async Task<List<string>> ReadFileAsync(string filepath)
     return result;
 }
 
+/// <summary>
+/// Метод сортировки входного списка строк
+/// </summary>
 void SortString(List<string> inputList)
 {
     string temp = string.Empty;

@@ -6,6 +6,12 @@ namespace Postman
 {
     public class EmailService
     {
+        /// <summary>
+        /// Метод отправки электронного сообщения
+        /// </summary>
+        /// <param name="email">Почта получателя</param>
+        /// <param name="subject">Тема сообщения</param>
+        /// <param name="text">Сообщение</param>
         public void SendEmail(string email, string subject, string text)
         {
             MailAddress fromAddress = new("v4gum@yandex.ru", "Inoske");
@@ -24,6 +30,11 @@ namespace Postman
             Console.ReadKey();
         }
 
+        /// <summary>
+        /// Метод, проверяющий валидность почты
+        /// </summary>
+        /// <param name="email">Проверяющаяся почта</param>
+        /// <returns>Является ли почта валидной?</returns>
         public bool ValidateEmail(string email)
         {
             if (email == null)
