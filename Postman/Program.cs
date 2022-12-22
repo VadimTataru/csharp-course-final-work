@@ -1,45 +1,32 @@
-﻿using System.Net.Mail;
-using System.Text.RegularExpressions;
+﻿using Postman;
 
 StartApp();
 
 void StartApp()
 {
+    EmailService service = new();
     string email;
+    string subject;
+    string body;
     while (true)
     {
         Console.Clear();
         Console.WriteLine("Введите email: ");
         email = Console.ReadLine();
-        if (!ValidateEmail(email))
+        if (!service.ValidateEmail(email))
         {
             Console.WriteLine("Email не корректен!!!");
             Thread.Sleep(2000);
             continue;
         }
+        Console.WriteLine("Введите тему сообщения: ");
+        subject = Console.ReadLine();
+
+        Console.WriteLine("Введите сообщение для отправки: ");
+        body = Console.ReadLine();
+
+        service.SendEmail(email, subject, body);
 
         break;
     }
-
-    SendEmail();
-
-}
-
-void SendEmail()
-{
-    SmtpClient client = new SmtpClient();
-}
-
-bool ValidateEmail(string email)
-{
-    if(email == null)
-        return false;
-    email = email.Trim();
-    string pattern = @"^(?("")(""[^""]+?""@)|(([0-9a-z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-z])@))" +
-                @"(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-z][-\w]*[0-9a-z]*\.)+[a-z0-9]{2,17}))$";
-
-    if (Regex.IsMatch(email, pattern, RegexOptions.IgnoreCase))
-        return true;
-    
-    return false;
 }
