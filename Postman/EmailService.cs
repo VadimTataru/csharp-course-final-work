@@ -24,7 +24,7 @@ namespace Postman
             smtpClient.EnableSsl = true;
             smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
             smtpClient.UseDefaultCredentials = false;
-            smtpClient.Credentials = new NetworkCredential(fromAddress.Address, "eaatxjehyjyzvgzd");
+            smtpClient.Credentials = new NetworkCredential(fromAddress.Address, "deleted-app-key:D");
             
             smtpClient.Send(message);
             Console.ReadKey();
